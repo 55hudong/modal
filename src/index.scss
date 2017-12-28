@@ -1,0 +1,63 @@
+.modal{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    padding-top: 120px;
+
+    z-index: 5;  
+
+    /* 动画元素类 */
+    &.animated{
+        &.show{
+            .modal-mask{
+                opacity: 1;
+            }
+            .modal-dialog{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .modal-mask{
+            opacity: 0;
+            transition: all .3s;
+        }
+
+        .modal-dialog{
+            transform: translateY(30%);
+            opacity: 0;
+            transition: all .3s;
+        }
+    }
+    
+    /* 模态框遮罩 */
+    .modal-mask{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+
+        background-color: rgba(#000, .8);
+        z-index: 0;
+    }
+
+    /* 模态框主体 */
+    .modal-dialog{
+        position: relative;
+
+        width: 80%;
+        height: 300px;
+
+        margin: auto;
+
+        background-color: #fff;
+        border-radius: 8px;
+        z-index: 1;
+    }
+}
