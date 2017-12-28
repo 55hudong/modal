@@ -5,6 +5,9 @@ html结构参考bootstrap的modal组件，结合生产用运用到的功能，�
 # 源码
 [source](index.ts)
 
+# 在线demo
+[jsfiddle](https://jsfiddle.net/coolcoffee/pjsp3zxs/1/)
+
 # 引入方式
 
 ### 单独应用
