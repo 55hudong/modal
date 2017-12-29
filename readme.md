@@ -3,7 +3,7 @@ html结构参考bootstrap的modal组件，结合生产用运用到的功能，�
 
 
 # 源码
-[source](modal.ts)
+[source](src/modal.ts)
 
 # 在线demo
 [jsfiddle](https://jsfiddle.net/coolcoffee/pjsp3zxs/1/)
@@ -13,9 +13,6 @@ html结构参考bootstrap的modal组件，结合生产用运用到的功能，�
 ### 单独应用
 将build/Modal.js引入到html文件即可。
 
-### 模块形式
-
-+ 内部采用umd形式打包，使用javascript开发可以直接通过加载器加载***build/Modal.js***。
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -57,6 +54,20 @@ html结构参考bootstrap的modal组件，结合生产用运用到的功能，�
 </body>
 </html>
 ```
+
+### 模块形式
+
+#### 首先使用npm或者yarn安装好modal模块
+```
+# 使用npm
+npm install --save @55hudong/modal
+
+
+# 使用yarn
+yarn add @55hudong/modal
+
+```
+
 
 + 如果是javascript
 ``` javascript
