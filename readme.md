@@ -13,7 +13,7 @@ html结构参考bootstrap的modal组件，结合生产用运用到的功能，�
 ### 单独应用
 将build/Modal.js引入到html文件即可。
 
-```html
+``` html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +58,7 @@ html结构参考bootstrap的modal组件，结合生产用运用到的功能，�
 ### 模块形式
 
 #### 首先使用npm或者yarn安装好modal模块
-```
+``` bash
 # 使用npm
 npm install --save @55hudong/modal
 
@@ -89,7 +89,7 @@ modal.show();
 ```
 
 + 如果是typescript
-```typescript
+``` typescript
 
 import * as Modal from "@55hudong/modal";
 let modal = new Modal(".modal-test");
