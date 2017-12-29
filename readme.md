@@ -3,7 +3,7 @@ html结构参考bootstrap的modal组件，结合生产用运用到的功能，�
 
 
 # 源码
-[source](index.ts)
+[source](modal.ts)
 
 # 在线demo
 [jsfiddle](https://jsfiddle.net/coolcoffee/pjsp3zxs/1/)
@@ -58,10 +58,29 @@ html结构参考bootstrap的modal组件，结合生产用运用到的功能，�
 </html>
 ```
 
-+ 如果是typescript，请引入***src/Modal/index***
++ 如果是javascript
+``` javascript
+import Modal from "@55hudong/modal";
+let modal = new Modal(".modal-test");
+modal.ok(function(){
+    console.log("点击了确认按钮");
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve();
+        }, 2000)
+    });
+}).cancel(function(){
+    console.log("点击了取消按钮");
+})
+
+modal.show();
+
+```
+
++ 如果是typescript
 ```typescript
 
-import * as Modal from "src/Modal";
+import * as Modal from "@55hudong/modal";
 let modal = new Modal(".modal-test");
 modal.ok(function(){
     console.log("点击了确认按钮");
